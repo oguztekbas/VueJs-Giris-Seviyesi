@@ -1,8 +1,6 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <DynamicMenu />
+  <Logout />
   <router-view />
 </template>
 
@@ -28,3 +26,17 @@
   color: #42b983;
 }
 </style>
+
+<script>
+import DynamicMenu from "@/components/DynamicMenu.vue";
+import Logout from "@/components/Logout.vue";
+
+export default {
+  
+  components: {
+    DynamicMenu,
+    Logout
+  }
+
+}
+</script>
