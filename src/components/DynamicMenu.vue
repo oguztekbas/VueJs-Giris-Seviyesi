@@ -30,7 +30,7 @@ export default {
   methods: {
     getMenus(){
      let token = this.$store.state.token;
-      axios.get('https://localhost:44373/api/product/getmenus',{
+      axios.get('https://localhost:44373/api/dynamicmenu/getmenus',{
         headers: {
            Authorization: 'Bearer ' + token
          }
