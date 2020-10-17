@@ -30,9 +30,9 @@ export default {
     }
   },
   methods: {
-   LoginProcess(){
+   async LoginProcess(){
      
-      axios.post('https://localhost:44373/api/authentication/login',
+     await axios.post('https://localhost:44373/api/authentication/login',
         {
           "username" : this.username,
           "password" : this.password

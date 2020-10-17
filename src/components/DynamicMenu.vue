@@ -28,9 +28,9 @@ export default {
   // },
  
   methods: {
-    getMenus(){
+    async getMenus(){
      let token = this.$store.state.token;
-      axios.get('https://localhost:44373/api/dynamicmenu/getmenus',{
+      await axios.get('https://localhost:44373/api/dynamicmenu/getmenus',{
         headers: {
            Authorization: 'Bearer ' + token
          }
